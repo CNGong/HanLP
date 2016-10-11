@@ -20,7 +20,6 @@ import junit.framework.TestCase;
 import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @author hankcs

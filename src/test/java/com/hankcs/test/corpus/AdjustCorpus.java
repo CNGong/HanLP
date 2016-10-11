@@ -13,23 +13,18 @@ package com.hankcs.test.corpus;
 
 
 import com.hankcs.hanlp.HanLP;
-import com.hankcs.hanlp.corpus.dictionary.DictionaryMaker;
-import com.hankcs.hanlp.corpus.dictionary.EasyDictionary;
 import com.hankcs.hanlp.corpus.dictionary.TFDictionary;
-import com.hankcs.hanlp.corpus.dictionary.item.Item;
 import com.hankcs.hanlp.corpus.document.CorpusLoader;
 import com.hankcs.hanlp.corpus.document.Document;
 import com.hankcs.hanlp.corpus.document.sentence.word.CompoundWord;
 import com.hankcs.hanlp.corpus.document.sentence.word.IWord;
 import com.hankcs.hanlp.corpus.io.FolderWalker;
 import com.hankcs.hanlp.corpus.io.IOUtil;
-import com.hankcs.hanlp.corpus.occurrence.TermFrequency;
 import com.hankcs.hanlp.dictionary.CoreDictionary;
 import junit.framework.TestCase;
 
 import java.io.*;
 import java.util.List;
-import java.util.Map;
 
 /**
  * 部分标注有问题，比如逗号缺少标注等等，尝试修复它

@@ -32,6 +32,7 @@ import static com.hankcs.hanlp.HanLP.Config.IOAdapter;
  */
 public class IOUtil
 {
+    public static boolean isResourceParam = true;
     /**
      * 序列化对象
      *
@@ -285,6 +286,42 @@ public class IOUtil
         }
     }
 
+    /**
+     * 将资源中的一个资源读入byte数组
+     *
+     * @param path
+     * @return
+     * @throws IOException
+     */
+    public static byte[] readBytesFromResource(String path) throws IOException
+    {
+        InputStream is = IOUtil.class.getResourceAsStream("/" + path);
+        byte[] targetArray = new byte[is.available()];
+        int len;
+        int off = 0;
+        while ((len = is.read(targetArray, off, targetArray.length - off)) != -1 && off < targetArray.length)
+        {
+            off += len;
+        }
+        is.close();
+        return targetArray;
+    }
+
+    public static byte[] getBytes(InputStream is) throws IOException
+    {
+
+        int len;
+        int size = 1024;
+        byte[] buf;
+
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        buf = new byte[size];
+        while ((len = is.read(buf, 0, size)) != -1)
+            bos.write(buf, 0, len);
+        buf = bos.toByteArray();
+        return buf;
+    }
+
     public static LinkedList<String> readLineList(String path)
     {
         LinkedList<String> result = new LinkedList<String>();
@@ -469,6 +506,40 @@ public class IOUtil
         {
             throw new UnsupportedOperationException("只读，不可写！");
         }
+    }
+
+    /**
+     * 判断文件是否存在
+     *
+     * @param path
+     * @return
+     */
+    public static boolean isFileExists(String path)
+    {
+        return new File(path).exists();
+    }
+
+    /**
+     * 判断资源是否位于jar中
+     *
+     * @param path
+     * @return
+     */
+    public static boolean isResource(String path)
+    {
+        return isResourceParam;   // 这样未必好，比如用户的root就叫/data/就会发生问题，不过目前就这么办了
+    }
+
+    /**
+     * 智能获取InputStream，如果是资源文件则返回相应的InputStream
+     *
+     * @param path
+     * @return
+     * @throws FileNotFoundException
+     */
+    public static InputStream getInputStream(String path) throws FileNotFoundException
+    {
+        return isResource(path) ? IOUtil.class.getResourceAsStream("/" + path) : new FileInputStream(path);
     }
 
     /**

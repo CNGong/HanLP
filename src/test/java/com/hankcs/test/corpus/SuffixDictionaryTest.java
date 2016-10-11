@@ -6,7 +6,6 @@ import com.hankcs.hanlp.utility.Predefine;
 import junit.framework.TestCase;
 
 import java.util.Map;
-import java.util.Set;
 
 public class SuffixDictionaryTest extends TestCase
 {

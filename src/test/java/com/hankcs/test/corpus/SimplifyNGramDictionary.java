@@ -11,9 +11,7 @@
  */
 package com.hankcs.test.corpus;
 
-import com.hankcs.hanlp.HanLP;
 import com.hankcs.hanlp.corpus.dictionary.TFDictionary;
-import com.hankcs.hanlp.corpus.occurrence.TermFrequency;
 import com.hankcs.hanlp.dictionary.CoreDictionary;
 import junit.framework.TestCase;
 

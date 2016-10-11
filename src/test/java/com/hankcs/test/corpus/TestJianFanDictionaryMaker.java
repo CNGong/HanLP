@@ -12,7 +12,6 @@
 package com.hankcs.test.corpus;
 
 import com.hankcs.hanlp.HanLP;
-import com.hankcs.hanlp.corpus.dictionary.StringDictionary;
 import com.hankcs.hanlp.corpus.io.IOUtil;
 import com.hankcs.hanlp.dictionary.other.CharTable;
 import junit.framework.TestCase;

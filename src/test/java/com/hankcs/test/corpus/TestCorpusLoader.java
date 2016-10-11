@@ -14,10 +14,8 @@ package com.hankcs.test.corpus;
 import com.hankcs.hanlp.corpus.dictionary.DictionaryMaker;
 import com.hankcs.hanlp.corpus.document.CorpusLoader;
 import com.hankcs.hanlp.corpus.document.Document;
-import com.hankcs.hanlp.corpus.document.sentence.word.CompoundWord;
 import com.hankcs.hanlp.corpus.document.sentence.word.IWord;
 import com.hankcs.hanlp.corpus.document.sentence.word.Word;
-import com.hankcs.hanlp.corpus.io.IOUtil;
 import junit.framework.TestCase;
 
 import java.io.*;

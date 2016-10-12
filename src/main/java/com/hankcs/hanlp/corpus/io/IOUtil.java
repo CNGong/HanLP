@@ -32,6 +32,7 @@ import static com.hankcs.hanlp.HanLP.Config.IOAdapter;
  */
 public class IOUtil
 {
+    // 表示使用resources中的词库还是使用项目路径下的词库
     public static boolean isResourceParam = true;
     /**
      * 序列化对象

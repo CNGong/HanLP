@@ -18,7 +18,7 @@ public class ViterbiSegTest extends TestCase {
         HanLP.Config.CoreDictionaryPath = "warehouse/brand_use/data/dictionary/CoreNatureDictionary.mini.txt";
         // 注意品牌词不能是单个字，否则会报错
         HanLP.Config.CustomDictionaryPath = new String[]{
-                "warehouse/company_name/data/dictionary/custom/CustomDictionary.txt",
+                "warehouse/brand_use/data/dictionary/custom/CustomDictionary.txt",
                 "warehouse/brand_use/data/dictionary/custom/上海地名.txt ns", "warehouse/brand_use/data/dictionary/custom/全国地名大全.txt ns",
                 "warehouse/brand_use/data/dictionary/custom/品牌词_不带空格.txt bn", "warehouse/brand_use/data/dictionary/custom/深圳地名.txt ns",
                 "warehouse/brand_use/data/dictionary/custom/二级品牌名.txt bn"};
@@ -28,10 +28,11 @@ public class ViterbiSegTest extends TestCase {
     }
 
     public void testGetWordSpeech(){
-        HanLP.Config.CoreDictionaryPath = "warehouse/brand_use/data/dictionary/CoreNatureDictionary.mini.txt";
-        HanLP.Config.CustomDictionaryPath = new String[]{"warehouse/company_name/data/dictionary/custom/CustomDictionary.txt"};
-        System.out.println(CustomDictionary.get("老板电器"));
-        System.out.println(CoreDictionary.get("老板电器"));
+        HanLP.Config.CoreDictionaryPath = "data/dictionary/CoreNatureDictionary.txt";
+        HanLP.Config.BiGramDictionaryPath = "data/dictionary/CoreNatureDictionary.ngram.txt";
+        HanLP.Config.CustomDictionaryPath = new String[]{"warehouse/brand_use/data/dictionary/custom/CustomDictionary.txt"};
+        System.out.println(CustomDictionary.get("厨柜"));
+        System.out.println(CoreDictionary.get("厨柜"));
         System.out.println(StandardTokenizer.segment("深圳市格力数码科技有限公司"));
     }
 }

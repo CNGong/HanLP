@@ -1526,7 +1526,6 @@ CEMNI
 CENBEST
 CENBIRD
 CENTALINE
-CEO
 CEPSA
 CEQY
 CER-STONE
@@ -5002,7 +5001,6 @@ Intel
 Intelligence
 Interlogix
 Intermec
-International
 Interpon
 Intersil
 Intertek
@@ -9555,7 +9553,6 @@ SONMA
 SONOS
 SONY
 SOPO
-SOR
 SORABOL
 SOROTEC
 SOTAN
@@ -10505,7 +10502,6 @@ TONYON
 TONYWEAR
 TONZE
 TOOT
-TOP
 TOP1
 TOPBAND
 TOPBRIGHT
@@ -12438,7 +12434,6 @@ benchBODY
 benjii
 benro
 beoka
-best
 bestbaby
 bestday
 bestwish
@@ -12615,7 +12610,6 @@ etcomm
 eternal
 ettusais
 eve
-every
 eyegaage
 eyeline
 e·Mini
@@ -12708,7 +12702,6 @@ hinos
 hizhen
 hkflourmills
 homart
-home
 homelike
 honest
 honeyshare
@@ -12878,7 +12871,6 @@ lashou
 laucork
 lawlens
 lawson
-leader
 lebosi
 leeman
 lefons
@@ -13125,7 +13117,6 @@ shiningline
 shinsb
 shopbop
 shopin
-show
 showboom
 shsolid
 sidite
@@ -18824,7 +18815,6 @@ zxwheel
 同华投资
 同发
 同和居
-同城
 同大
 同太和
 同庆和堂
@@ -19964,7 +19954,6 @@ zxwheel
 多正
 多氟多
 多灵
-多点
 多特
 多特瑞
 多玛
@@ -24464,7 +24453,6 @@ zxwheel
 斯道拉恩索
 斯隆
 斯隆商学院
-新一代
 新一佳
 新一天
 新一系
@@ -24512,7 +24500,6 @@ zxwheel
 新养道
 新农兴
 新农哥
-新农村
 新农牛肉
 新冠
 新冠美
@@ -24617,7 +24604,6 @@ zxwheel
 新日月
 新日铁住金
 新旭
-新时代
 新时达
 新昊
 新明
@@ -25715,6 +25701,7 @@ zxwheel
 李奥贝纳
 李子园
 李字
+李宁
 李宁探索
 李宁运动装备
 李施德林
@@ -29668,7 +29655,6 @@ zxwheel
 百安居
 百宝力
 百宴菌菇拉面
-百家
 百家坊
 百家好
 百家好世
@@ -29708,7 +29694,6 @@ zxwheel
 百度贴吧
 百度金融
 百度音乐
-百强
 百强家具
 百得胜
 百得诗特
@@ -30218,7 +30203,6 @@ zxwheel
 祖祥
 祖迪斯
 祖阁家具
-祛痘
 神丹
 神人助
 神六螺旋藻
@@ -30682,6 +30666,7 @@ zxwheel
 穿山
 穿衣助手
 突破润滑油
+突破电气
 窗视界
 窝窝团
 立业生物
@@ -36251,7 +36236,6 @@ zxwheel
 靠达铝业
 面包旅行
 面点王
-鞋柜
 韦乐雅斯
 韦伯
 韦尔斯润滑油
@@ -37601,3 +37585,9 @@ KC皮草
 家装e站
 百V厨柜
 建业JY
+58同城
+100%感觉
+SOR祛痘
+原创食品
+保利地产
+大华地产

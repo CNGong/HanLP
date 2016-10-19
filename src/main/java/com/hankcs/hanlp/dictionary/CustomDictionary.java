@@ -271,6 +271,20 @@ public class CustomDictionary
     }
 
     /**
+     * 往词典trie中插入一个新词，覆盖模式
+     * @param word
+     * @param natureWithFrequency
+     * @return
+     */
+    public static boolean insertIntoTrie(String word, String natureWithFrequency){
+        CoreDictionary.Attribute att = natureWithFrequency == null ? new CoreDictionary.Attribute(Nature.nz, 1) : CoreDictionary.Attribute.create(natureWithFrequency);
+        if (att == null) return false;
+        if (trie == null) trie = new BinTrie<CoreDictionary.Attribute>();
+        trie.put(word, att);
+        return true;
+    }
+
+    /**
      * 以覆盖模式增加新词<br>
      *     动态增删不会持久化到词典文件
      *

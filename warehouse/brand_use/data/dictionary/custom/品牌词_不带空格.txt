@@ -7962,7 +7962,7 @@ Olansi
 Olar
 Olayk
 Oldefy
-Ole'
+Ole'精品超市
 Oley
 Olimpia
 Olivoila
@@ -9568,7 +9568,6 @@ SOWEI
 SOYEA
 SOYO
 SOZ
-SPA
 SPACH
 SPAEK
 SPAO
@@ -10321,7 +10320,7 @@ TBEA
 TBO
 TBY
 TCK
-TCL-
+TCL
 TCP
 TCR
 TDC
@@ -13372,6 +13371,7 @@ zoombo
 zorro
 zpy
 zxwheel
+PHILIPS
 π°
 一一木门
 一东
@@ -15488,7 +15488,6 @@ zxwheel
 人人车
 人允
 人初油
-人和人
 人和光伏
 人城
 人杰
@@ -24508,7 +24507,6 @@ zxwheel
 新力金融
 新功
 新加坡国立大学
-新动力
 新势整合
 新北洋
 新千虫草
@@ -24591,7 +24589,6 @@ zxwheel
 新影联
 新德克
 新志阳光
-新思路
 新怡
 新意科技
 新感觉
@@ -26766,6 +26763,7 @@ zxwheel
 步步升
 步步升布鞋
 步步洁
+步步高
 步步高教育电子
 步步高电话
 步步高置业
@@ -27840,6 +27838,7 @@ zxwheel
 海宏液压
 海容
 海密梯克
+海尔
 海尔卫浴
 海尔斯
 海尔智能医疗
@@ -30903,7 +30902,6 @@ zxwheel
 精华科技
 精华隆
 精品网
-精品超市
 精品陶瓷
 精国
 精工模具
@@ -37591,3 +37589,6 @@ SOR祛痘
 原创食品
 保利地产
 大华地产
+飞利浦
+TCL罗格朗
+TCL-罗格朗

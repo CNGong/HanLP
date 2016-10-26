@@ -33,19 +33,23 @@ public class ViterbiSegTest extends TestCase {
                 "warehouse/brand_use/data/dictionary/custom/上海地名.txt ns", "warehouse/brand_use/data/dictionary/custom/全国地名大全.txt ns",
                 "warehouse/brand_use/data/dictionary/custom/品牌词_不带空格.txt bn", "warehouse/brand_use/data/dictionary/custom/深圳地名.txt ns",
                 "warehouse/brand_use/data/dictionary/custom/二级品牌名.txt bn"};
-        StandardTokenizer.SEGMENT.enableNameRecognize(false);
+        HanLP.Config.CoreDictionaryPath = "data/dictionary/CoreNatureDictionary.txt";
+        HanLP.Config.BiGramDictionaryPath = "data/dictionary/CoreNatureDictionary.ngram.txt";
+        StandardTokenizer.SEGMENT.enableNameRecognize(false).enablePlaceRecognize(true);
         System.out.println(StandardTokenizer.segment("上汽"));
-        System.out.println(StandardTokenizer.segment("深圳市康力欣电子有限公司"));
+        System.out.println(StandardTokenizer.segment("河南车宝行汽车销售有限公司成立于2015年4月，位于三全路中州大道一米阳光，附近有风雅颂、琥珀名城等小区及柳林等城中村，住宿便利。"));
     }
 
     public void testGetWordSpeech(){
+        IOUtil.isResourceParam = false;
         HanLP.Config.CoreDictionaryPath = "data/dictionary/CoreNatureDictionary.txt";
         HanLP.Config.BiGramDictionaryPath = "data/dictionary/CoreNatureDictionary.ngram.txt";
-        HanLP.Config.CustomDictionaryPath = new String[]{"warehouse/company_name/data/dictionary/custom/CustomDictionary.txt"};
-        System.out.println(CustomDictionary.get("联手"));
-        System.out.println(CoreDictionary.get("联手"));
+        HanLP.Config.CustomDictionaryPath = new String[]{"warehouse/brand_use/data/dictionary/custom/CustomDictionary.txt"};
+        System.out.println(CustomDictionary.get("路中"));
+        System.out.println(CoreDictionary.get("路中"));
 //        StandardTokenizer.SEGMENT.enableNumberQuantifierRecognize(false).enableNameRecognize(false);
-        System.out.println(StandardTokenizer.segment("目前公司是Oracle、Sun、IBM、HP、Aspen 、Labsystems、Honeywell、Simsci、SilverStream、Cisco、3Com、Netscreen、Avaya、AMP、Netscreen、CA等国际着名IT公司的国内或行业指定代理商"));
+        System.out.println(StandardTokenizer.segment("河南车宝行汽车销售有限公司成立于2015年4月，位于三全路中州大道一米阳光，附近有风雅颂、琥珀名城等小区及柳林等城中村，住宿便利。"));
+        System.out.println(StandardTokenizer.segment("2008年雪润全国三十余家经销商举行第一次例会，共同分享了雪润产品带给大家以及顾客内在美的改变"));
     }
 
     public void testInsert(){

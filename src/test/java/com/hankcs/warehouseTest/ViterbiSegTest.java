@@ -21,7 +21,7 @@ public class ViterbiSegTest extends TestCase {
                 "warehouse/brand_use/data/dictionary/custom/品牌词_不带空格.txt bn", "warehouse/brand_use/data/dictionary/custom/深圳地名.txt ns",
                 "warehouse/brand_use/data/dictionary/custom/二级品牌名.txt bn","warehouse/company_name/data/dictionary/custom/公司名后缀.txt nis"};
         StandardTokenizer.SEGMENT.enableNameRecognize(false);
-        System.out.println(StandardTokenizer.segment("上汽"));
+        System.out.println(StandardTokenizer.segment("上"));
         System.out.println(StandardTokenizer.segment("深圳市康力欣电子有限公司"));
     }
 
